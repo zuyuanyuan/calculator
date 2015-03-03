@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    xmlns:numview="http://schemas.android.com/apk/res/com.kengdie.calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#d8d8d8"
+    android:orientation="vertical"
+	android:paddingTop="15dp"
+	android:paddingRight="15dp"
+	android:paddingLeft="10dp"
+    tools:context=".MainActivity" >
+    
+    <com.kengdie.calculator.ScreenView
+        android:id="@+id/screenView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/AC"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="AC"
+                numview:index = "0"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/zhengfu"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="+/-"
+                numview:index = "1"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/baifen"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="%"
+                numview:index = "2"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.Beijing
+                android:id="@+id/beijing"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="背景"
+                numview:index = "3"
+                numview:numsize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:index = "4"
+                numview:num="1"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="2"
+                numview:index = "5"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/thr"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="3"
+                numview:index = "6"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="+"
+                numview:index = "7"
+                numview:numsize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="4"
+                numview:index = "8"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="5"
+                numview:index = "9"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="6"
+                numview:index = "10"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="-"
+                numview:index = "11"
+                numview:numsize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="7"
+                numview:index = "12"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/eight"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="8"
+                numview:index = "13"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/nine"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="9"
+                numview:index = "14"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/cheng"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="*"
+                numview:index = "15"
+                numview:numsize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/zero"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="0"
+                numview:index = "16"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.NumView
+                android:id="@+id/dian"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="."
+                numview:index = "17"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/dengyu"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="="
+                numview:index = "18"
+                numview:numsize="30sp" />
+
+            <com.kengdie.calculator.SimbolView
+                android:id="@+id/chu"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                numview:num="/"
+                numview:index = "19"
+                numview:numsize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

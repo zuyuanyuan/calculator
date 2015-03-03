@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="NumView">
+        <attr name = "num" format = "string"></attr>
+        <attr name = "numsize" format = "dimension"></attr>
+        <attr name = "index" format="string"></attr>
+    </declare-styleable>
+
+</resources>
